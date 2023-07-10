@@ -7,13 +7,18 @@
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
-img{
+html {
+    scroll-behavior: smooth;
+}
+
+.logo{
     width: 50px;
 }
+
+
 body{
     color:black;
     background-color: #ffffff;
-
     font-size: 16px;
 }
 
@@ -29,6 +34,7 @@ ul{
     width: 100%;
     margin:auto;
     background-color: white;
+    position: fixed;
 }
 
 /*Navigation*/
@@ -79,6 +85,8 @@ ul{
     align-items: center;
     justify-content:center;
     color: white;
+    height: 100vh;
+
 }
 
 h1{
@@ -116,6 +124,7 @@ opacity: 0.5;
 }
 
 
+/* Mis servicios */
 .hero{
     display: flex;
     align-items: center;
@@ -138,8 +147,43 @@ opacity: 0.5;
     margin:0 20px;
 }
 
-.card{
-    background-color: azure;
-    padding: 25px;
-    text-align: justify;
+/* Mis proyectos */
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 12px;
+}
+
+.contenedor{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor{
+    align-items: flex-start;
+    max-width: 1150px;
+    margin:0 10px;
+    justify-content: space-between;
+    border-color: #000000;
+}
+
+.square{
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-color: #000000;
+}
+
+.portada{
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    background: cover;
 }
