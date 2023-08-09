@@ -1,97 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Solange</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="nav-main">
-            <img src="img/solange.jpg" class="logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#about">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="#hero">Mis servicios</a>
-                </li>
-                <li>
-                    <a href="#projects">Mis proyectos</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <hr> -->
-    </div>
-        <!-- showcase -->
-        <header class="showcase">
-            <h2> Bienvenida/o</h2>
-            <h1>Soy Solange, Desarrolladora Web y Publicista</h1>
-            <a href="#projects" class="btn">Ir a portafolio </a>
-        </header>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="image"></div>
-            <h2>Sobre mí</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam necessitatibus assumenda neque
-                voluptas quod deleniti nisi earum consequuntur vel dignissimos, nam mollitia, ea sapiente aliquid
-                consectetur! Suscipit, nobis quod.</p>
+      <nav class="nav-main">
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
+        <img src="img/solange.jpg" class="logo" />
+        <ul class="nav-menu">
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Sobre mí</a>
+          </li>
+          <li>
+            <a href="#hero"> ¿Qué hago? </a>
+          </li>
+          <li>
+            <a href="#projects">Mis proyectos</a>
+          </li>
+          <li>
+            <a href="#carrousel">Testimonios</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <hr> -->
+    </div>
+    <!-- showcase -->
+    <header class="showcase">
+      <div class='hero-image'></div>
+      <div class='hero-text'>
+      <!-- <h2>Bienvenida/o</h2> -->
+      <h1>¡Hola! Soy <Span>Solange</Span>,<br> Desarrolladora Web <br>y Publicista</h1>
+      <div class="separator-container">
+        <div class="separator separator-corriendo"></div>
+        </div>
+      <a href="#projects" class="btn">Ir a portafolio </a>
+    </div>
+    </header>
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="imagensol"></div>
+        <div class="text">
+          <h2>Sobre mí</h2>
+          <p>
+            Con experiencia en el desarrollo de aplicaciones web desde cero, he utilizado mi
+            conocimiento en JavaScript para implementar funciones dinámicas y
+            eficientes en la interacción con el usuario. Además, mi formación en
+            publicidad me ha permitido comprender las necesidades del usuario
+            final y diseñar soluciones.
+            <br>¡Muchas gracias por estar acá!
+          </p>
+        </div>
+      </div>
     </section>
+    <!-- servicios -->
     <section class="hero" id="hero">
-        <h2>Mis servicios</h2>
-        <section class="servicios">
-            <div class="card">
-                <h3>Desarrolladora Front End</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam necessitatibus assumenda
-                    neque voluptas quod deleniti nisi earum consequuntur vel dignissimos, nam mollitia, ea sapiente
-                    aliquid consectetur! Suscipit, nobis quod.</p>
-            </div>
-            <div class="card">
-                <h3>Desarrolladora Front End</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam necessitatibus assumenda
-                    neque voluptas quod deleniti nisi earum consequuntur vel dignissimos, nam mollitia, ea sapiente
-                    aliquid consectetur! Suscipit, nobis quod.</p>
-            </div>
-            <div class="card">
-                <h3>Desarrolladora Front End</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam necessitatibus assumenda
-                    neque voluptas quod deleniti nisi earum consequuntur vel dignissimos, nam mollitia, ea sapiente
-                    aliquid consectetur! Suscipit, nobis quod.</p>
-
-            </div>
-        </section>
+      
+      <h2> ¿Qué hago? </h2>
+      
+      <section class="servicios">
+        <div class="card">
+          <div class="icono">
+            <img src="./img/icono-pc.png" class="uno">
+          </div>
+          <h3>Desarrolladora Front End</h3>
+          <p>
+            El desarrollo web es la forma en la cuál puedo unir mis habilidades de diseño y código para crear páginas centradas en las necesidades del cliente y el usuario. 
+          </p>
+        </div>
+        <div class="card">
+          <div class="icono">
+            <img src="./img/icono.png" class="uno">
+          </div>
+          <h3>Publicista</h3>
+          <p>
+            Me dedico a la publicidad desde el diseño y redacción. Tengo experiencia trabajando en agencias como Comunity Manager, diseñadora, Content Creator, entre otras cosas. 
+Además, siempre estoy trabajanco con emprendedores creando sus logos, branding y acompañándolos en el proceso.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icono">
+            <img src="./img/icono-ilustracion.png" class="uno">
+          </div>
+          <h3>Ilustradora</h3>
+          <p>
+            La ilustración es la forma más organica en la que me comunico y me encanta enfocarme en la naturaleza con un toque fantástico. Trabajo con emprendedores ilustrando para ellos, así como también, hago comisones.
+          </p>
+        </div>
+      </section>
     </section>
+   <!--  proyectos -->
     <section class="projects" id="projects">
-        <h2>Mis proyectos</h2>
-        <section class="contenedor">
-            <div class="square">
-                <img src="./img/pawsbook.png" class="portada">
+      <h2>Mis proyectos</h2>
+      <div class="options-container">
+        <ul class="options">
+          <li onclick="showContainer(1)">Desarrollo Web</li>
+          <li onclick="showContainer(2)">Publicidad</li>
+          <li onclick="showContainer(3)">Ilustración</li>
+        </ul>
+      </div>
+      <section class="contenedor-1 show">
+        <div class="square">
+          <img src="./img/pawsbook.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Pawsbook</h3>
+            <p>
+              Red social en donde los amantes de las mascotas se pueden registrar y postear sobre ellas.
+            </p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/ghibli.jpg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Ghibli Library</h3>
+            <p>Proyecto sobre Studio Ghibli que contiene la data de todas sus películas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/card.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Card Validation</h3>
+            <p>Página creada para validar tarjetas de crédito usando el algoritmo de Luhn</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/todo.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>To-Do List</h3>
+            <p>Proyecto que utiliza el DOM para crear una lista de tareas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/md.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
             </div>
-            <div class="square">
-                <img src="./img/pawsbook.png" class="portada">
+            <h3>Markdown Links</h3>
+            <p>Proyecto en Node.js el cuál detecta los links rotos en los archivos Markdown</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/chucao.jpg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Chucao</h3>
+            <p>Proyecto de diseño web en el cual blablabla</p>
+          </div>
+        </div>
+      </section>
+      <section class="contenedor-2">
+        <div class="square">
+          <img src="./img/mapu.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Pawsbook</h3>
+            <p>
+              Red social en donde los amantes de las mascotas se pueden registrar y postear sobre ellas.
+            </p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/kitsune.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Ghibli Library</h3>
+            <p>Proyecto sobre Studio Ghibli que contiene la data de todas sus películas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/eros.png" class="portada" />
+          <div class="info">
+            <h3>Card Validation</h3>
+            <p>Página creada para validar tarjetas de crédito usando el algoritmo de Luhn</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/garden.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>To-Do List</h3>
+            <p>Proyecto que utiliza el DOM para crear una lista de tareas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/md.png" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
             </div>
-            <div class="square">
-                <img src="./img/pawsbook.png" class="portada">
+            <h3>Markdown Links</h3>
+            <p>Proyecto en Node.js el cuál detecta los links rotos en los archivos Markdown</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/chucao.jpg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
             </div>
-            <div class="aquare">
-                <img src="./img/pawsbook.png" class="portada">
-            </div>
-            <div class="square">
-                <img src="./img/pawsbook.png" class="portada">
-            </div>
-            <div class="square">
-                <img src="./img/pawsbook.png" class="portada">
-            </div>
-        </section>
+            <h3>Chucao</h3>
+            <p>Proyecto de diseño web en el cual blablabla</p>
+          </div>
+        </div>
+      </section>
+      <section class="contenedor-3">
+        <div class="square">
+          <img src="./img/1.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Pawsbook</h3>
+            <p>
+              Red social en donde los amantes de las mascotas se pueden registrar y postear sobre ellas.
+            </p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/2.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Ghibli Library</h3>
+            <p>Proyecto sobre Studio Ghibli que contiene la data de todas sus películas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/3.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Card Validation</h3>
+            
+            <p>Página creada para validar tarjetas de crédito usando el algoritmo de Luhn</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/4.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>To-Do List</h3>
+            <p>Proyecto que utiliza el DOM para crear una lista de tareas</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/5.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Markdown Links</h3>
+            <p>Proyecto en Node.js el cuál detecta los links rotos en los archivos Markdown</p>
+          </div>
+        </div>
+        <div class="square">
+          <img src="./img/6.jpeg" class="portada" />
+          <div class="info">
+            <div class="separator-container">
+              <div class="separator separator-corriendo"></div>
+              </div>
+            <h3>Chucao</h3>
+            <p>Proyecto de diseño web en el cual blablabla</p>
+          </div>
+        </div>
+      </section>
     </section>
+    </section>
+    <!-- Carrusel -->
+    <section class="carrousel" id="carrousel">
+      <h2>Testimonios</h2>
+      <div class="separator-container">
+        <div class="separator separator-corriendo"></div>
+        </div>
+    <div class="pic-ctn">
+      <div class="pic">
+        <p class="testimony">"Solange es una profesional integral y muy pendiente de su crecimiento personal. Fue un gusto enorme compartir con ella en la agencia y que nos aportara con su conocimiento. Estoy seguro que puede desenvolverse sin inconveniente en cualquier espacio que le permita seguir expresando su alta creatividad y dónde se le planteen grandes desafíos."</p>
+        <p class="signature-1">Guillermo Pereira</p>
+        <p class="signature-2">Publicista, Docente y Estratega Digital en Agencia Cataclismo.</p>
+      </div>
+      <div class="pic">
+        <p class="testimony">"Trabajar con Sol ha sido una muy linda experiencia, es una excelente compañera que aporta a un ambiente laboral seguro y de aprendizaje. Es una profesional integral y detallista con una perspectiva que suma a los proyectos que desarrolla."</p>
+        <p class="signature-1">Roxana Garcés</p>
+        <p class="signature-2">Directora Audiovisual y Multimedia</p>
+      </div>
+      <div class="pic">
+        <p class="testimony">"Solange es una profesional integral y muy pendiente de su crecimiento personal. Fue un gusto enorme compartir con ella en la agencia y que nos aportara con su conocimiento. Estoy seguro que puede desenvolverse sin inconveniente en cualquier espacio que le permita seguir expresando su alta creatividad y dónde se le planteen grandes desafíos."</p>
+        <p class="signature-1">Guillermo Pereira</p>
+        <p class="signature-2">Publicista, Docente y Estratega Digital en Agencia Cataclismo.</p>
+      </div>
+      <div class="pic">
+        <p class="testimony">"Solange es una profesional integral y muy pendiente de su crecimiento personal. Fue un gusto enorme compartir con ella en la agencia y que nos aportara con su conocimiento. Estoy seguro que puede desenvolverse sin inconveniente en cualquier espacio que le permita seguir expresando su alta creatividad y dónde se le planteen grandes desafíos."</p>
+        <p class="signature-1">Guillermo Pereira</p>
+        <p class="signature-2">Publicista, Docente y Estratega Digital en Agencia Cataclismo.</p>
+      </div>
+      <div class="pic">
+        <p class="testimony">"Solange es una profesional integral y muy pendiente de su crecimiento personal. Fue un gusto enorme compartir con ella en la agencia y que nos aportara con su conocimiento. Estoy seguro que puede desenvolverse sin inconveniente en cualquier espacio que le permita seguir expresando su alta creatividad y dónde se le planteen grandes desafíos."</p>
+        <p class="signature-1">Guillermo Pereira</p>
+        <p class="signature-2">Publicista, Docente y Estratega Digital en Agencia Cataclismo.</p>
+      </div>
+    </div>
+  </section>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
