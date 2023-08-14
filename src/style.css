@@ -278,6 +278,7 @@ font-family: 'Roboto', sans-serif;
 /* Acá ninguno es importante para el responsive, solo el padre */
 .servicios .card {
   align-items: center;
+  justify-content: center;
   width: 300px;
   flex-direction: column;
   flex-wrap: wrap;
@@ -307,16 +308,13 @@ font-family: 'Roboto', sans-serif;
   margin: auto;
   padding: 100px 12px;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
 }
 
 .projects h2{
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
-   /*  margin: 25px 0; */
    color:#4D5566;
-   padding-bottom:10px;
-   text-align: center;
 }
 
 .contenedor-1, .contenedor-2, .contenedor-3 {
@@ -331,30 +329,27 @@ font-family: 'Roboto', sans-serif;
 }
 .show{
   justify-content: center;
-  /* flex-direction: space; */
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .options-container{
-  width: 100%;
-  margin: auto;
+  margin-top: 20px;
   display: flex;
   font-size: 17px;
-  justify-content: space-between;
   align-items: center;
- /*  max-width: 1100px; */
+  justify-content: center;
   font-family: sans-serif;
-  flex-direction: column;
-  /* background-color: rgba(201, 141, 233, 1); */
-  color:white;
+  color: white;
+  flex-wrap: wrap;
   border-radius: 1;
 }
 
 .options-container ul{
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .options-container ul li {
     margin: 10px 30px;
@@ -428,19 +423,26 @@ font-family: 'Roboto', sans-serif;
   font-family: sans-serif;
 }
 
-footer {
+.button-container{
   display: flex;
-  bottom: 0;
-  background-color: #0a496e50;
-  width: 100%;
-  position: absolute;
-  height: 30px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  top: 405vh;
+  justify-content: center;
 }
+
+.info .btn{
+  margin: 10px 10px;
+  /* font-family: sans-serif; */
+  display: flex;
+  cursor: pointer;
+  padding: 5px 5px;
+  /* border-radius: 50px; */
+  color: #fff;
+  transition: 0.5s;
+  background-color: rgba(201, 141, 233, 1);
+  border: none;
+  font-size: 12px;
+
+}
+
 
 /* carrusel */
 
@@ -592,6 +594,103 @@ background-image: url(./img/separador.png);
       background-position-x: -40px;
   }
 }
+
+/*FOOTER*/
+footer{
+  width:100%;
+  background-color:#E59738;
+  color:#fff;
+  }
+  
+  .top_header{
+  padding:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  }
+  
+  .top_header section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  }
+  
+  .top_header span{
+  padding:0 1rem;
+  }
+  
+  .top_header .fa{
+  color:#ffbe00;
+  font-size:35px;
+  }
+  
+  footer .border-shape {
+  width: 40%;
+  }
+  
+  footer .border-shape::before {
+  width: 100%;
+  left:120px;
+  }
+  
+  footer .border-shape::after {
+  width: 100%;
+  right:120px;
+  }
+  
+  footer .bottom_content section{
+  padding:1.5rem 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:Center;
+  }
+  
+  .bottom_content a{
+  margin:0 20px;
+  color:rgba(255,255,255,0.7);
+  transition:0.5s;
+  }
+  
+  .bottom_content a:hover{
+  color:rgba(255,255,255,1);
+  }
+  
+  
+  .copyright{
+  padding:0.8em 0;
+  /* background-color:#19798c; */
+  text-align:center;
+  color:rgb(248, 248, 248);
+  font-size:12px;
+  }
+  
+  
+  
+  @media (max-width:820px){
+  .top_header{
+  padding:1rem;
+  display:block;
+  }
+  
+  .top_header section{
+  margin:40px 0;
+  align-items:left;
+  justify-content:left;
+  }
+  footer .bottom_content section{
+  padding:1rem;
+  display:block;
+  }
+  footer .bottom_content section a{
+  padding:1rem;
+  font-size:12px;
+  margin:0 5px;
+  display:inline-block;
+  }
+  }
+  
 
 /* Mobile-first responsive styles */
 @media only screen and (max-width: 800px) {
