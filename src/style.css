@@ -520,7 +520,7 @@ font-family: 'Roboto', sans-serif;
   text-align: justify;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   align-items: center;
   margin: 10px 0; /* Espaciado entre testimonios */
 }
@@ -540,16 +540,20 @@ font-family: 'Roboto', sans-serif;
   top: 0;
   /* left: calc(50%); */
   opacity: 0;
-  animation: display 50s infinite; /* Increase animation duration to 25s */
+  animation: display 30s infinite; /* Increase animation duration to 25s */
+}
+
+div:nth-child(1) {
+  animation-delay: 0s; /* Delay for the second testimonial */
 }
 
 div:nth-child(2) {
-  animation-delay: 25s; /* Delay for the second testimonial */
+  animation-delay: 8s; /* Delay for the second testimonial */
 }
 
 /* Delay for the third testimonial */
 div:nth-child(3) {
-  animation-delay: 40s;
+  animation-delay:15s;
 }
 
 /* Delay for the fourth testimonial */
@@ -692,6 +696,7 @@ footer{
   .container {
     padding: 0;
     position: static;
+    background-color: #f2f2e9;
   }
 
   .sticky ul {
