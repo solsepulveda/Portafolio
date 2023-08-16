@@ -36,7 +36,7 @@ ul {
 
 /*Navigation*/
 .nav-main {
-  font-size: 17px;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +44,7 @@ ul {
   margin: auto;
   flex-direction: column;
   flex-wrap: wrap;
+  font-weight: 500;
 }
 
 .nav-main ul {
@@ -54,7 +55,7 @@ ul {
 }
 
 .nav-main ul li {
-  padding: 0 10px;
+  padding: 0 15px;
   flex-wrap: wrap;
 }
 
