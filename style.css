@@ -233,28 +233,53 @@ font-family: 'Roboto', sans-serif;
   width: 100%;
   flex-direction: column;
   margin: auto;
-  padding: 100px;
-  background-color: #E59738;
+  padding: 60px;
+  background-color: #f2f2e9;
   width: 100%;
   background-color: (201, 141, 233, 1);
     display: flex;
     justify-content: center; /* Alinea el contenedor en el centro horizontal */
     align-items: center;
+    color:#4D5566;
 }
 
 .hero h2{
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
    /*  margin: 25px 0; */
-   color:#ffffff;
+   /* color:#ffffff; */
 }
 
 .bajada{
   text-align: center;
   margin:20px 0;
   width:100%;
-  color: white;
+  /* color: rgb(255, 255, 255); */
   font-size: 14px;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.card ul{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color:#2c313a
+}
+
+.card ul li{
+  background-color: #ead4f6;
+  border-radius: 5px;
+  padding: 4px 5px;
+  margin:5px 1px;
+}
+
+.card ul li:hover{
+  background-color: #efa954;
+  font-size: 15px;
+  cursor:default;
+  color:white;
 }
 
 .icono {
@@ -285,6 +310,7 @@ font-family: 'Roboto', sans-serif;
   line-height: 25px;
   margin-bottom: 12px;
   padding: 0 10px;
+  margin-top:10px;
   /* line-height: 1.5; */
 }
 .servicios {
@@ -386,7 +412,7 @@ font-family: 'Roboto', sans-serif;
   }
   
   .bajada-titulo{
-    color: white;
+    color:#E59738;
     margin-bottom: 10px;
     font-size: 13px;
     font-weight: bold;
@@ -507,19 +533,25 @@ font-family: 'Roboto', sans-serif;
   
 }
 
-.pic {
+.rate{
+  margin-bottom: -30px;
+  margin-top:20px;
+}
+
+
+.pic .testimony-container{
+
  width:300px;
   height: 350px;
   padding: 10px;
   background-color: white;
-  padding: 20px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   align-items: center; /* Centrar verticalmente los testimonios */
   justify-content: center;
   flex-direction: column;
-  margin: 10px 10px;
+  margin: 10px 20px;
 }
 
 .testimony {
@@ -708,6 +740,10 @@ footer{
   .text {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .bajada{
+    display:none;
   }
 
 }
